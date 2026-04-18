@@ -1,0 +1,28 @@
+name: Validate Content JSON
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-size: 16
+
+    - name: Validate JSON files
+      run: |
+        echo "Validating catalog.json..."
+        node -e "JSON.parse(require('fs').readFileSync('catalog.json'))"
+        
+        echo "Validating story scripts..."
+        find stories -name "*.json" -exec node -e "JSON.parse(require('fs').readFileSync('{}'))" \;
+        
+        echo "All JSON files are valid!"
