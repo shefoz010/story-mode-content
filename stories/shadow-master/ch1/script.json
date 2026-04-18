@@ -7,8 +7,8 @@
             "speaker": "أنا",
             "text": "أخيراً... بعد أسبوعين من العزلة في هذا الكهف، حان وقت الخروج. وجبة الكومبو المحدودة لن تنتظر!",
             "bgm": "ambient_room",
-            "background": "dark_gamer_room",
-            "character": "hero_messy",
+            "background": "bg_dark_gamer_room.png",
+            "character": "char_hero_messy_tired.png",
             "expression": "tired",
             "nextNode": "node_002"
         },
@@ -16,8 +16,8 @@
             "id": "node_002",
             "speaker": "",
             "text": "*يفتح الباب لتضربه أشعة شمس الصباح الحارقة كأنها شعاع ليزر*",
-            "background": "bright_stairs",
-            "character": "hero_messy",
+            "background": "bg_bright_stairs.png",
+            "character": "char_hero_messy_shocked.png",
             "expression": "shocked",
             "effect": "flash_white",
             "nextNode": "node_003"
@@ -26,7 +26,7 @@
             "id": "node_003",
             "speaker": "أنا",
             "text": "عيني!! اللعنة على ضوء الـ... واااااه!",
-            "background": "bright_stairs",
+            "background": "bg_bright_stairs.png",
             "effect": "screen_shake",
             "nextNode": "node_004_choices"
         },
@@ -101,7 +101,7 @@
             "speaker": "[Player_Name]",
             "text": "(يفتح عينيه)... أين أنا؟ فصل دراسي؟ مهلاً، هل هذا الجسد الضعيف هو وعائي الجديد؟",
             "bgm": "school_ambient",
-            "background": "classroom_day",
+            "background": "bg_classroom_day.png",
             "character": "hero_student",
             "expression": "confused",
             "nextNode": "end_of_demo"

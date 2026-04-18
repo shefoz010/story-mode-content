@@ -45,7 +45,7 @@
           "name": "روح الظل",
           "role": "مرشد غامض",
           "bio": "كيان غامض يسكن ظلك، يمدك بالقوة ولكنه يطلب ثمناً باهظاً.",
-          "image": "stories/shadow-master/assets/shadow_spirit.png",
+          "image": "stories/shadow-master/ch1/assets/char_hero_messy_tired.png",
           "relationVar": "shadow_relationship"
         },
         {
