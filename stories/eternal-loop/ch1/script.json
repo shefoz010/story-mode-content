@@ -1,0 +1,68 @@
+{
+  "chapterId": "ch1",
+  "chapterName": "الموت الأول",
+  "nodes": [
+    {
+      "id": "start",
+      "speaker": "",
+      "text": "تستيقظ والنبضات تتسارع في صدرك.. الغرفة تبدو مألوفة، لكن هناك شيء خاطئ.",
+      "background": "bg_bedroom.png",
+      "nextNode": "node1"
+    },
+    {
+      "id": "node1",
+      "speaker": "أنت",
+      "text": "هل كان ذلك.. حلماً؟ شعرت وكأنني سقطت من مبنى شاهق.",
+      "nextNode": "node2"
+    },
+    {
+      "id": "node2",
+      "speaker": "",
+      "text": "تنظر إلى الساعة الرقمية بجانب سريرك.. إنها تشير إلى 06:00 صباحاً.",
+      "nextNode": "node3"
+    },
+    {
+      "id": "node3",
+      "speaker": "صوت غريب",
+      "text": "ليس حلماً.. بل بداية جديدة.",
+      "character": "char_spirit.png",
+      "expression": "neutral",
+      "nextNode": "node4"
+    },
+    {
+      "id": "node4",
+      "speaker": "الظلال",
+      "text": "لقد عدت مجدداً. فكر جيداً قبل أن تخرج من هذا الباب.",
+      "choices": [
+        {
+          "text": "من أنت؟ ماذا يحدث هنا؟",
+          "targetNode": "ask_who",
+          "setVar": { "spirit_relationship": 5 }
+        },
+        {
+          "text": "سأخرج من هنا فوراً، هذا جنون!",
+          "targetNode": "leave_room",
+          "setVar": { "spirit_relationship": -5 }
+        }
+      ]
+    },
+    {
+      "id": "ask_who",
+      "speaker": "الظلال",
+      "text": "أنا من سيشهد نهايتك.. وبدايتك.. للمرة الألف.",
+      "nextNode": "end_chapter"
+    },
+    {
+      "id": "leave_room",
+      "speaker": "الظلال",
+      "text": "اذهب إذاً.. لكنك ستعود إلى هذه الغرفة قبل أن تغرب الشمس.",
+      "nextNode": "end_chapter"
+    },
+    {
+      "id": "end_chapter",
+      "speaker": "",
+      "text": "يتبع في الحلقة القادمة...",
+      "specialAction": "end_chapter"
+    }
+  ]
+}
