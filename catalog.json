@@ -30,15 +30,33 @@
     "shadow-master": {
       "title": "سيد الظلال",
       "titleEn": "Shadow Master",
-      "synopsis": "في عالم تحكمه التكنولوجيا المظلمة، تستيقظ لتجد نفسك وحيداً في غرفة مليئة بالشاشات. رسالة غامضة تظهر أمامك... \"مرحباً يا لاعب. اللعبة بدأت.\" هل ستكتشف الحقيقة أم ستبقى أسير هذا العالم الافتراضي؟",
+      "synopsis": "في عالم حيث الظلال لها أرواحها الخاصة، تكتشف أنك تستطيع التحكم في ظلك الخاص للقيام بمهام مستحيلة. هل ستستخدم قوتك من أجل الخير أم ستغرق في الظلام؟",
       "rating": 4.8,
-      "readers": 284500,
-      "tags": ["غموض", "تكنولوجيا", "اختيارات", "مغامرة"],
+      "readers": 125400,
+      "tags": ["أكشن", "خيال", "قوى خارقة", "عربي"],
       "mature": false,
-      "status": "ongoing",
-      "totalChapters": 5,
-      "posterColor": "#6c3ce0",
-      "coverUrl": "stories/shadow-master/cover.webp",
+      "status": "popular",
+      "totalChapters": 12,
+      "posterColor": "#2c3e50",
+      "coverUrl": "stories/shadow-master/cover.png",
+      "characters": [
+        {
+          "id": "shadow_spirit",
+          "name": "روح الظل",
+          "role": "مرشد غامض",
+          "bio": "كيان غامض يسكن ظلك، يمدك بالقوة ولكنه يطلب ثمناً باهظاً.",
+          "image": "stories/shadow-master/assets/shadow_spirit.png",
+          "relationVar": "shadow_relationship"
+        },
+        {
+          "id": "leila",
+          "name": "ليلى",
+          "role": "صديقة الطفولة",
+          "bio": "تعرف سرك منذ البداية، وتحاول دائماً إبقاءك في الجانب المضيء.",
+          "image": "stories/shadow-master/assets/leila.png",
+          "relationVar": "leila_relationship"
+        }
+      ],
       "chapters": [
         {
           "id": "ch1",
@@ -299,7 +317,19 @@
       "status": "new",
       "totalChapters": 1,
       "posterColor": "#f39c12",
+      "coverUrl": "stories/eternal-loop/cover.png",
+      "characters": [
+        {
+          "id": "loop_spirit",
+          "name": "كايوس",
+          "role": "حارس الوقت",
+          "bio": "الكيان المسؤول عن حبسك في هذه الدائرة. يبدو وكأنه يستمتع بمعاناتك.",
+          "image": "stories/eternal-loop/ch1/char_spirit.png",
+          "relationVar": "spirit_relationship"
+        }
+      ],
       "chapters": [
+
         {
           "id": "ch1",
           "number": 1,
