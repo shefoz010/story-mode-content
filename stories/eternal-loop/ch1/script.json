@@ -37,13 +37,22 @@
         {
           "text": "من أنت؟ ماذا يحدث هنا؟",
           "targetNode": "ask_who",
-          "setVar": { "spirit_relationship": 5 }
+          "setVar": { "spirit_relationship": 5, "trait_intelligence": 10 },
+          "globalPercent": 72
         },
         {
           "text": "سأخرج من هنا فوراً، هذا جنون!",
           "targetNode": "leave_room",
-          "setVar": { "spirit_relationship": -5 }
+          "setVar": { "spirit_relationship": -5, "trait_courage": 10 },
+          "globalPercent": 24
+        },
+        {
+          "text": "[خيار سري] التحدث بلغة الظلال",
+          "targetNode": "secret_path",
+          "requiredTraits": { "trait_intelligence": 50 },
+          "globalPercent": 4
         }
+
       ]
     },
     {
