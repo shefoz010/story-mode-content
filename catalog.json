@@ -1,0 +1,382 @@
+{
+  "featured": "shadow-master",
+  "categories": [
+    {
+      "id": "popular",
+      "title": "🔥 الأكثر رواجاً",
+      "stories": ["shadow-master", "crimson-throne"]
+    },
+    {
+      "id": "new",
+      "title": "✨ قصص جديدة",
+      "stories": ["eternal-loop", "behind-camera", "forgotten-memory", "soul-matchmaker", "meta-glitch", "secret-guardian", "rivals-edge"]
+    }
+
+,
+    {
+      "id": "adventure",
+      "title": "⚔️ مغامرات ملحمية",
+      "stories": ["shadow-master", "desert-kings"]
+    },
+    {
+      "id": "mystery",
+      "title": "🔍 غموض وإثارة",
+      "stories": ["nightfall-academy", "secret-guardian", "meta-glitch", "eternal-loop", "forgotten-memory"]
+    }
+
+
+  ],
+  "stories": {
+    "shadow-master": {
+      "title": "سيد الظلال",
+      "titleEn": "Shadow Master",
+      "synopsis": "في عالم تحكمه التكنولوجيا المظلمة، تستيقظ لتجد نفسك وحيداً في غرفة مليئة بالشاشات. رسالة غامضة تظهر أمامك... \"مرحباً يا لاعب. اللعبة بدأت.\" هل ستكتشف الحقيقة أم ستبقى أسير هذا العالم الافتراضي؟",
+      "rating": 4.8,
+      "readers": 284500,
+      "tags": ["غموض", "تكنولوجيا", "اختيارات", "مغامرة"],
+      "mature": false,
+      "status": "ongoing",
+      "totalChapters": 5,
+      "posterColor": "#6c3ce0",
+      "coverUrl": "stories/shadow-master/cover.webp",
+      "chapters": [
+        {
+          "id": "ch1",
+          "number": 1,
+          "title": "البداية — غرفة الظلام",
+          "sizeMB": 2,
+          "price": "free",
+          "status": "available"
+        },
+        {
+          "id": "ch2",
+          "number": 2,
+          "title": "الهروب — أول اختبار",
+          "sizeMB": 3,
+          "price": "free",
+          "status": "available"
+        },
+        {
+          "id": "ch3",
+          "number": 3,
+          "title": "الحقيقة المُرّة",
+          "sizeMB": 4,
+          "price": "ticket",
+          "status": "available"
+        },
+        {
+          "id": "ch4",
+          "number": 4,
+          "title": "مواجهة الظل",
+          "sizeMB": 5,
+          "price": "gems",
+          "gemCost": 30,
+          "status": "available"
+        },
+        {
+          "id": "ch5",
+          "number": 5,
+          "title": "النهاية — أو البداية؟",
+          "sizeMB": 5,
+          "price": "gems",
+          "gemCost": 50,
+          "status": "locked"
+        }
+      ]
+    },
+    "crimson-throne": {
+      "title": "العرش القرمزي",
+      "titleEn": "Crimson Throne",
+      "synopsis": "في مملكة تمزّقها الصراعات، أنت الوريث المنسي للعرش. بين الخيانة والولاء، عليك أن تختار طريقك نحو السلطة أو العدالة. كل قرار تتخذه يغيّر مصير المملكة بأكملها.",
+      "rating": 4.6,
+      "readers": 156200,
+      "tags": ["فانتازيا", "سياسة", "حرب", "درامية"],
+      "mature": false,
+      "status": "new",
+      "totalChapters": 4,
+      "posterColor": "#c0392b",
+      "coverUrl": "stories/crimson-throne/cover.webp",
+      "chapters": [
+        {
+          "id": "ch1",
+          "number": 1,
+          "title": "الوريث المنسي",
+          "sizeMB": 3,
+          "price": "free",
+          "status": "available"
+        },
+        {
+          "id": "ch2",
+          "number": 2,
+          "title": "ليلة الخيانة",
+          "sizeMB": 4,
+          "price": "ticket",
+          "status": "available"
+        },
+        {
+          "id": "ch3",
+          "number": 3,
+          "title": "سقوط الأقنعة",
+          "sizeMB": 4,
+          "price": "gems",
+          "gemCost": 25,
+          "status": "available"
+        },
+        {
+          "id": "ch4",
+          "number": 4,
+          "title": "العرش أو الموت",
+          "sizeMB": 5,
+          "price": "gems",
+          "gemCost": 40,
+          "status": "locked"
+        }
+      ]
+    },
+    "nightfall-academy": {
+      "title": "أكاديمية الغسق",
+      "titleEn": "Nightfall Academy",
+      "synopsis": "مدرسة داخلية غامضة تختفي فيها الطالبات واحدة تلو الأخرى. أنتِ الطالبة الجديدة التي تكتشف أن وراء الجدران أسراراً مرعبة. هل ستنجين من ليلة الغسق القادمة؟",
+      "rating": 4.7,
+      "readers": 198000,
+      "tags": ["رعب", "غموض", "مدرسة", "إثارة"],
+      "mature": true,
+      "status": "new",
+      "totalChapters": 3,
+      "posterColor": "#1a1a2e",
+      "coverUrl": "stories/nightfall-academy/cover.webp",
+      "chapters": [
+        {
+          "id": "ch1",
+          "number": 1,
+          "title": "الليلة الأولى",
+          "sizeMB": 3,
+          "price": "free",
+          "status": "available"
+        },
+        {
+          "id": "ch2",
+          "number": 2,
+          "title": "صرخة في الممرات",
+          "sizeMB": 4,
+          "price": "ticket",
+          "status": "available"
+        },
+        {
+          "id": "ch3",
+          "number": 3,
+          "title": "الحقيقة المدفونة",
+          "sizeMB": 5,
+          "price": "gems",
+          "gemCost": 35,
+          "status": "locked"
+        }
+      ]
+    },
+    "desert-kings": {
+      "title": "ملوك الصحراء",
+      "titleEn": "Desert Kings",
+      "synopsis": "في أعماق الصحراء العربية، تكتشف قبيلتك خريطة قديمة تقود لكنز أسطوري. لكن القبائل الأخرى تريد نفس الكنز. قُد قبيلتك في مغامرة ملحمية بين الرمال.",
+      "rating": 4.5,
+      "readers": 89400,
+      "tags": ["مغامرة", "تاريخي", "عربي", "استراتيجية"],
+      "mature": false,
+      "status": "ongoing",
+      "totalChapters": 4,
+      "posterColor": "#d68910",
+      "coverUrl": "stories/desert-kings/cover.webp",
+      "chapters": [
+        {
+          "id": "ch1",
+          "number": 1,
+          "title": "الخريطة القديمة",
+          "sizeMB": 3,
+          "price": "free",
+          "status": "available"
+        },
+        {
+          "id": "ch2",
+          "number": 2,
+          "title": "عاصفة الرمال",
+          "sizeMB": 4,
+          "price": "ticket",
+          "status": "available"
+        },
+        {
+          "id": "ch3",
+          "number": 3,
+          "title": "واحة الأشباح",
+          "sizeMB": 4,
+          "price": "gems",
+          "gemCost": 30,
+          "status": "available"
+        },
+        {
+          "id": "ch4",
+          "number": 4,
+          "title": "كنز الملوك",
+          "sizeMB": 5,
+          "price": "gems",
+          "gemCost": 45,
+          "status": "locked"
+        }
+      ]
+    },
+    "secret-guardian": {
+      "title": "الحارس السري",
+      "titleEn": "Secret Guardian",
+      "synopsis": "طالب جامعي نهاراً، وصائد ثغرات رقمي ليلاً. عندما تتعرض مدينتك لهجوم إلكتروني غامض، تضطر للمخاطرة بكل شيء. هل ستكشف هويتك لإنقاذ من تحب؟",
+      "rating": 4.9,
+      "readers": 0,
+      "tags": ["تكنولوجيا", "جريمة", "واقعي", "غموض"],
+      "mature": false,
+      "status": "new",
+      "totalChapters": 1,
+      "posterColor": "#2980b9",
+      "chapters": [
+        {
+          "id": "ch1",
+          "number": 1,
+          "title": "الحياة المزدوجة",
+          "sizeMB": 2,
+          "price": "free",
+          "status": "available"
+        }
+      ]
+    },
+    "meta-glitch": {
+      "title": "خلل في النظام",
+      "titleEn": "Meta Glitch",
+      "synopsis": "ماذا لو استيقظت الشخصية التي تلعب بها وقررت التحدث إليك مباشرة؟ \"أنا أعرف أنك هناك خلف الشاشة.\" قصة رعب نفسي تكسر الجدار الرابع وتجعلك تشك في واقعك.",
+      "rating": 5.0,
+      "readers": 0,
+      "tags": ["رعب نفسي", "ميتا", "غموض", "مبتكر"],
+      "mature": true,
+      "status": "new",
+      "totalChapters": 1,
+      "posterColor": "#2c3e50",
+      "chapters": [
+        {
+          "id": "ch1",
+          "number": 1,
+          "title": "أنا أراك",
+          "sizeMB": 3,
+          "price": "free",
+          "status": "available"
+        }
+      ]
+    },
+    "rivals-edge": {
+      "title": "حافة التحدي",
+      "titleEn": "Rival's Edge",
+      "synopsis": "في أكاديمية النخبة، يظهر منافس غامض يتفوق عليك في كل شيء. هل هو عدو لدود أم حليف سري؟ معركة ذكاء وإرادة تحدد من سيصل للقمة.",
+      "rating": 4.7,
+      "readers": 0,
+      "tags": ["منافسة", "ذكاء", "مدرسة", "دراما"],
+      "mature": false,
+      "status": "new",
+      "totalChapters": 1,
+      "posterColor": "#27ae60",
+      "chapters": [
+        {
+          "id": "ch1",
+          "number": 1,
+          "title": "اللقاء الأول",
+          "sizeMB": 2,
+          "price": "free",
+          "status": "available"
+        }
+      ]
+    },
+    "eternal-loop": {
+      "title": "التكرار الأبدي",
+      "titleEn": "Eternal Loop",
+      "synopsis": "تموت في نهاية اليوم.. ثم تستيقظ في نفس السرير. لديك فرصة واحدة لتغيير قدرك، لكن في كل مرة تعود، يتغير شيء ما في العالم بشكل مرعب. هل ستكسر الحلقة؟",
+      "rating": 4.9,
+      "readers": 0,
+      "tags": ["تكرار زمني", "غموض", "بقاء", "خيالي"],
+      "mature": false,
+      "status": "new",
+      "totalChapters": 1,
+      "posterColor": "#f39c12",
+      "chapters": [
+        {
+          "id": "ch1",
+          "number": 1,
+          "title": "أول موت",
+          "sizeMB": 3,
+          "price": "free",
+          "status": "available"
+        }
+      ]
+    },
+    "behind-camera": {
+      "title": "خلف الكاميرا",
+      "titleEn": "Behind The Camera",
+      "synopsis": "أنت نجم مشهور على السوشيال ميديا، لكن متابعيك بدأوا يطلبون تحديات مرعبة مقابل الشهرة. هل ستضحي بكرامتك أم بصحتك العقلية من أجل \"اللايكات\"؟",
+      "rating": 4.8,
+      "readers": 0,
+      "tags": ["سوشيال ميديا", "رعب", "واقعي", "نفسي"],
+      "mature": true,
+      "status": "new",
+      "totalChapters": 1,
+      "posterColor": "#e74c3c",
+      "chapters": [
+        {
+          "id": "ch1",
+          "number": 1,
+          "title": "جنون الشهرة",
+          "sizeMB": 2,
+          "price": "free",
+          "status": "available"
+        }
+      ]
+    },
+    "forgotten-memory": {
+      "title": "الذاكرة المفقودة",
+      "titleEn": "Forgotten Memory",
+      "synopsis": "تستيقظ في مختبر مستقبلي، قيل لك أنك متطوع لتجربة رقمية. لكنك تكتشف أن هذا المختبر هو في الحقيقة داخل عقلك.. وهناك من يحاول مسح وجودك.",
+      "rating": 4.6,
+      "readers": 0,
+      "tags": ["سايبربانك", "خيال علمي", "نفسي", "أكشن"],
+      "mature": false,
+      "status": "new",
+      "totalChapters": 1,
+      "posterColor": "#9b59b6",
+      "chapters": [
+        {
+          "id": "ch1",
+          "number": 1,
+          "title": "الغرفة الرقمية",
+          "sizeMB": 4,
+          "price": "free",
+          "status": "available"
+        }
+      ]
+    },
+    "soul-matchmaker": {
+      "title": "خاطبة الأرواح",
+      "titleEn": "Soul Matchmaker",
+      "synopsis": "تعمل في وكالة زواج، لكن زبائنك ليسوا بشراً.. بل جن وشياطين يبحثون عن الحب في عالمنا الحديث. قصة كوميدية-رومانسية مع لمسات من الرعب.",
+      "rating": 4.7,
+      "readers": 0,
+      "tags": ["رومانسية", "كوميديا", "خوارق", "حديث"],
+      "mature": false,
+      "status": "new",
+      "totalChapters": 1,
+      "posterColor": "#1abc9c",
+      "chapters": [
+        {
+          "id": "ch1",
+          "number": 1,
+          "title": "أول عميل (ليس بشرياً)",
+          "sizeMB": 2,
+          "price": "free",
+          "status": "available"
+        }
+      ]
+    }
+
+
+  }
+}
