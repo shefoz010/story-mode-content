@@ -1,110 +1,179 @@
 {
-    "chapterId": "ch1_awakening",
-    "chapterName": "الفصل الأول: السقوط العظيم وولادة سيد الدمار",
-    "nodes": [
+  "chapterId": "arc_01_prologue",
+  "chapterName": "الموت السخيف والاستيقاظ المطلق",
+  "nodes": [
+    {
+      "node_id": "start_01",
+      "background": "messy_room",
+      "bgm": "bgm_lazy_day",
+      "ui_state": "dialogue_box",
+      "characters": [
         {
-            "id": "node_001",
-            "speaker": "أنا",
-            "text": "أخيراً... بعد أسبوعين من العزلة في هذا الكهف، حان وقت الخروج. وجبة الكومبو المحدودة لن تنتظر!",
-            "bgm": "ambient_room",
-            "background": "bg_dark_gamer_room.png",
-            "character": "char_hero_messy_tired.png",
-            "expression": "tired",
-            "nextNode": "node_002"
-        },
-        {
-            "id": "node_002",
-            "speaker": "",
-            "text": "*يفتح الباب لتضربه أشعة شمس الصباح الحارقة كأنها شعاع ليزر*",
-            "background": "bg_bright_stairs.png",
-            "character": "char_hero_messy_shocked.png",
-            "expression": "shocked",
-            "effect": "flash_white",
-            "nextNode": "node_003"
-        },
-        {
-            "id": "node_003",
-            "speaker": "أنا",
-            "text": "عيني!! اللعنة على ضوء الـ... واااااه!",
-            "background": "bg_bright_stairs.png",
-            "effect": "screen_shake",
-            "nextNode": "node_004_choices"
-        },
-        {
-            "id": "node_004_choices",
-            "speaker": "النظام الداخلي",
-            "text": "بينما تسقط من على السلم في وضعية تصوير بطيء درامية، ما هو آخر شيء فكرت فيه؟",
-            "choices": [
-                {
-                    "text": "حياتي البائسة التي انتهت قبل أن تبدأ.",
-                    "targetNode": "node_fall_resolution",
-                    "setVar": {
-                        "Humor": 1
-                    }
-                },
-                {
-                    "text": "وجبة الكومبو المحدودة... لم أتذوقها!",
-                    "targetNode": "node_fall_resolution",
-                    "setVar": {
-                        "Gluttony": 1
-                    }
-                },
-                {
-                    "text": "اللعنة! نسيت عمل Save للعبتي قبل الخروج!",
-                    "targetNode": "node_fall_resolution",
-                    "setVar": {
-                        "Gamer_Pride": 1
-                    }
-                }
-            ]
-        },
-        {
-            "id": "node_fall_resolution",
-            "speaker": "",
-            "text": "*صوت ارتطام قوي.. ثم ظلام دامس.*",
-            "bgm": "stop",
-            "background": "black_screen",
-            "character": "none",
-            "nextNode": "node_system_boot"
-        },
-        {
-            "id": "node_system_boot",
-            "speaker": "صوت آلي بارد",
-            "text": "[جاري فحص الروح...] \n[تم العثور على توافق بنسبة 99.9% مع طاقة الفوضى]",
-            "bgm": "cyber_system_start",
-            "background": "hologram_blue",
-            "nextNode": "node_system_red"
-        },
-        {
-            "id": "node_system_red",
-            "speaker": "النظام",
-            "text": "[جاري تحميل الإحصائيات... مرحباً بعودتك.]",
-            "background": "hologram_red",
-            "effect": "screen_shake",
-            "nextNode": "node_name_input"
-        },
-        {
-            "id": "node_name_input",
-            "speaker": "النظام",
-            "text": "أدخل اسمك الحقيقي لتأكيد الهوية:",
-            "specialAction": "InputPlayerName",
-            "nextNode": "node_welcome_lord"
-        },
-        {
-            "id": "node_welcome_lord",
-            "speaker": "النظام",
-            "text": "أنت الآن: سيد الدمار [Player_Name].\nطاقة الفوضى الحالية: 1%.\nالمهمة الرئيسية: تخفَّ كطالب مدرسة ثانوية عادي، استعد طاقتك، ولا تكشف هويتك الحقيقية.",
-            "nextNode": "node_wake_up_school"
-        },
-        {
-            "id": "node_wake_up_school",
-            "speaker": "[Player_Name]",
-            "text": "(يفتح عينيه)... أين أنا؟ فصل دراسي؟ مهلاً، هل هذا الجسد الضعيف هو وعائي الجديد؟",
-            "bgm": "school_ambient",
-            "background": "bg_classroom_day.png",
-            "character": "hero_student",
-            "expression": "confused",
-            "nextNode": "end_of_demo"
+          "char_id": "mc_hero",
+          "name": "البطل",
+          "sprite_body": "base_lazy",
+          "sprite_face": "exp_sleepy",
+          "sprite_outfit": "outfit_messy_pajamas",
+          "position": "center"
         }
-    ]
+      ],
+      "dialogues": [
+        {
+          "speaker": "mc_hero",
+          "text": "أخيراً... الإصدار المحدود من (برجر الفوضى المزدوج) متاح لمدة ساعة واحدة فقط."
+        },
+        {
+          "speaker": "mc_hero",
+          "text": "(يتثاءب) لو لم أكن جائعاً حد الموت، لما تحركت قيد أنملة من أمام شاشتي... لكن الجوع كافر."
+        }
+      ],
+      "next_node": "start_02"
+    },
+    {
+      "node_id": "start_02",
+      "background": "stairs_daylight",
+      "bgm": "bgm_lazy_day",
+      "ui_state": "dialogue_box",
+      "characters": [
+        {
+          "char_id": "mc_hero",
+          "name": "البطل",
+          "sprite_body": "base_lazy",
+          "sprite_face": "exp_shocked",
+          "sprite_outfit": "outfit_messy_pajamas",
+          "position": "center"
+        }
+      ],
+      "events": [
+        {
+          "type": "screen_effect",
+          "effect": "flash_white",
+          "duration": 0.5
+        }
+      ],
+      "dialogues": [
+        {
+          "speaker": "mc_hero",
+          "text": "آخ! نور الشمس الملعون! عيني تحترق!"
+        }
+      ],
+      "next_node": "start_03"
+    },
+    {
+      "node_id": "start_03",
+      "background": "black",
+      "ui_state": "dialogue_box",
+      "characters": [],
+      "events": [
+        {
+          "type": "screen_effect",
+          "effect": "shake_heavy",
+          "duration": 1.0
+        }
+      ],
+      "dialogues": [
+        {
+          "speaker": "none",
+          "text": "وأنا أسقط في الهواء، والجاذبية تسحبني نحو الهاوية، كان هناك شيء واحد فقط يدور في عقلي..."
+        }
+      ],
+      "choices": [
+        {
+          "text": "نسيت أن أعمل Save للعبتي!",
+          "setVar": { "trait_gamer": 1 },
+          "targetNode": "system_awaken_01"
+        },
+        {
+          "text": "البرجر المزدوج... راح عليّ.",
+          "setVar": { "trait_gluttony": 1 },
+          "targetNode": "system_awaken_01"
+        },
+        {
+          "text": "أخيراً... سأتمكن من النوم للأبد دون إزعاج.",
+          "setVar": { "trait_sloth": 1 },
+          "targetNode": "system_awaken_01"
+        }
+      ]
+    },
+    {
+      "node_id": "system_awaken_01",
+      "background": "black",
+      "bgm": "bgm_system_cyber",
+      "ui_state": "system_hologram_blue",
+      "characters": [],
+      "dialogues": [
+        {
+          "speaker": "System",
+          "text": "[جاري فحص الروح...] \n[تم العثور على توافق بنسبة 99.9% مع طاقة الفوضى...]"
+        }
+      ],
+      "events": [
+        {
+          "type": "screen_effect",
+          "effect": "flash_white",
+          "delay": 1.0
+        }
+      ],
+      "next_node": "system_awaken_02"
+    },
+    {
+      "node_id": "system_awaken_02",
+      "background": "black",
+      "bgm": "bgm_system_cyber",
+      "ui_state": "system_hologram_red",
+      "characters": [],
+      "dialogues": [
+        {
+          "speaker": "System",
+          "text": "مرحباً بعودتك إلى الوجود... يا سيد الدمار.\n[الرجاء إدخال اسمك المستعار للغطاء البشري الجديد]"
+        }
+      ],
+      "events": [
+        {
+          "type": "input_name",
+          "variable_target": "player_name",
+          "default_value": "شادو"
+        }
+      ],
+      "next_node": "bedroom_waking_01"
+    },
+    {
+      "node_id": "bedroom_waking_01",
+      "background": "fancy_bedroom_morning",
+      "bgm": "bgm_mysterious_loyal",
+      "ui_state": "dialogue_box",
+      "characters": [
+        {
+          "char_id": "girl_vanilla",
+          "name": "؟؟؟",
+          "sprite_body": "base_zero_suit",
+          "sprite_face": "exp_loyal_blush",
+          "sprite_outfit": "outfit_zero_vanguard",
+          "position": "center"
+        }
+      ],
+      "events": [
+        {
+          "type": "screen_effect",
+          "effect": "flash_white",
+          "duration": 2.0
+        }
+      ],
+      "dialogues": [
+        {
+          "speaker": "girl_vanilla",
+          "text": "صباح الخير يا سيدي. لقد رتبت لك غطائك الجديد في (أكاديمية فرونتورا) كما أمرت."
+        },
+        {
+          "speaker": "[Player_Name]",
+          "text": "(في نفسه) لحظة... من هذه؟ ولماذا ترتدي زياً يبدو وكأنه سيمسح هذه المدينة من الخريطة؟"
+        },
+        {
+          "speaker": "System",
+          "text": "[تنبيه: تم رصد أول حليف من قادة الصفر. مستوى الولاء: أقصى حد.]"
+        }
+      ],
+      "nextNode": "end_of_chapter"
+    }
+  ]
 }
