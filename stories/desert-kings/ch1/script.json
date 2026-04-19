@@ -1,0 +1,18 @@
+{
+    "chapterId": "ch1",
+    "chapterName": "قريباً...",
+    "nodes": [
+        {
+            "id": "start",
+            "speaker": "النظام",
+            "text": "هذه القصة ما زالت قيد التطوير. سيتم إطلاق الفصل الأول قريباً جداً!",
+            "nextNode": "end"
+        },
+        {
+            "id": "end",
+            "speaker": "",
+            "text": "شكراً لاهتمامك. ترقب التحديثات القادمة!",
+            "specialAction": "end_chapter"
+        }
+    ]
+}
