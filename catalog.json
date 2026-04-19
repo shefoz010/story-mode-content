@@ -61,30 +61,22 @@
         {
           "id": "ch1",
           "number": 1,
-          "title": "الموت السخيف والاستيقاظ المطلق",
-          "sizeMB": 2,
+          "title": "الموت السخيف والبعث",
+          "sizeMB": 6,
           "price": "free",
           "status": "available"
         },
         {
           "id": "ch2",
           "number": 2,
-          "title": "عهد الروح وقدرة اللاشيء",
-          "sizeMB": 4,
-          "price": "free",
-          "status": "available"
-        },
-        {
-          "id": "ch3",
-          "number": 3,
-          "title": "الحقيقة المُرّة",
+          "title": "اليوم الأول: الانعكاس والكيان المخفي",
           "sizeMB": 4,
           "price": "ticket",
           "status": "available"
         },
         {
-          "id": "ch4",
-          "number": 4,
+          "id": "ch3",
+          "number": 3,
           "title": "مواجهة الظل",
           "sizeMB": 5,
           "price": "gems",
@@ -92,8 +84,8 @@
           "status": "available"
         },
         {
-          "id": "ch5",
-          "number": 5,
+          "id": "ch4",
+          "number": 4,
           "title": "النهاية — أو البداية؟",
           "sizeMB": 5,
           "price": "gems",

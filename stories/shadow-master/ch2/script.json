@@ -1,200 +1,203 @@
 {
-  "chapterId": "arc_01_resurrection",
-  "chapterName": "عهد الروح وقدرة اللاشيء",
-  "nodes": [
-    {
-      "node_id": "awakening_01",
-      "background": "messy_dorm_room",
-      "bgm": "bgm_mysterious_dark",
-      "ui_state": "dialogue_box",
-      "characters": [
-        {
-          "char_id": "mc_hero",
-          "name": "[Player_Name]",
-          "sprite_body": "base_student_weak",
-          "sprite_face": "exp_confused",
-          "sprite_outfit": "outfit_messy_uniform",
-          "position": "center"
-        }
-      ],
-      "dialogues": [
-        {
-          "speaker": "[Player_Name]",
-          "text": "(ينظر ليديه المرتجفتين) ما هذا المكان؟ تلك الدائرة السحرية على الأرض... هل هذه دماء؟"
-        }
-      ],
-      "events": [
-        {
-          "type": "show_system_window",
-          "title": "تنبيه النظام",
-          "content": "[تم الاستحواذ بنجاح. تم دمج ذكريات المضيف الميت.]\n[المهارة المكتسبة: اللاشيء (المستوى 1)]",
-          "color": "red"
-        }
-      ],
-      "next_node": "power_test_01"
-    },
-    {
-      "node_id": "power_test_01",
-      "background": "messy_dorm_room",
-      "bgm": "bgm_power_rising",
-      "ui_state": "dialogue_box",
-      "characters": [
-        {
-          "char_id": "mc_hero",
-          "name": "[Player_Name]",
-          "sprite_body": "base_student_weak",
-          "sprite_face": "exp_smirk",
-          "sprite_outfit": "outfit_messy_uniform",
-          "position": "center"
-        }
-      ],
-      "dialogues": [
-        {
-          "speaker": "[Player_Name]",
-          "text": "اللاشيء؟ هل ضحى هذا الفتى بحياته ليستدعي 'سيد الدمار' من أجل مهارة تبدو بهذا الضعف؟ فلنجربها على هذا السقف اللعين."
-        }
-      ],
-      "choices": [
-        {
-          "text": "تفعيل مهارة (اللاشيء)",
-          "actions": [
-            { "type": "play_sfx", "sfx": "sfx_void_erase" },
-            { "type": "screen_effect", "effect": "white_hole_expansion" }
-          ],
-          "targetNode": "power_test_02"
-        }
-      ]
-    },
-    {
-      "node_id": "power_test_02",
-      "background": "dorm_no_ceiling",
-      "bgm": "bgm_none",
-      "ui_state": "dialogue_box",
-      "characters": [
-        {
-          "char_id": "mc_hero",
-          "name": "[Player_Name]",
-          "sprite_body": "base_student_weak",
-          "sprite_face": "exp_shocked",
-          "sprite_outfit": "outfit_messy_uniform",
-          "position": "center"
-        }
-      ],
-      "dialogues": [
-        {
-          "speaker": "[Player_Name]",
-          "text": "ماذا؟! السقف... لقد مُحي تماماً من الوجود! لا غبار، لا حطام... فقط فراغ. هذه القوة مرعبة."
-        },
-        {
-          "speaker": "[Player_Name]",
-          "text": "بسرعة، قبل أن يلاحظ أحد... (الانعكاس)!"
-        }
-      ],
-      "events": [
-        { 
-          "type": "change_bg", 
-          "target": "messy_dorm_room", 
-          "effect": "reverse_time_glitch" 
-        }
-      ],
-      "next_node": "sister_entrance_01"
-    },
-    {
-      "node_id": "sister_entrance_01",
-      "background": "messy_dorm_room",
-      "bgm": "none",
-      "ui_state": "dialogue_box",
-      "characters": [],
-      "dialogues": [
-        {
-          "speaker": "صوت من خلف الباب",
-          "text": "تباً لك أيها اللعين! افتح الباب الآن وإلا سأحطمه على رأسك!"
-        },
-        {
-          "speaker": "[Player_Name]",
-          "text": "(عيون باردة) هل يجرؤ فاني على تهديدي؟ سأمحوه قبل أن يخطو خطوة واحدة..."
-        }
-      ],
-      "events": [
-        { "type": "screen_effect", "effect": "red_vignette_flash" },
-        { "type": "play_sfx", "sfx": "sfx_heart_stab" }
-      ],
-      "next_node": "soul_contract_node"
-    },
-    {
-      "node_id": "soul_contract_node",
-      "background": "messy_dorm_room",
-      "bgm": "bgm_heartbeat_fast",
-      "ui_state": "system_warning",
-      "dialogues": [
-        {
-          "speaker": "الروح القديمة",
-          "text": "توقف! هذه أختي! إن لمست خصلة من شعرها، سأحطم هذا الجسد ونذهب سوياً للجحيم! احمِها... هذا هو ثمن استدعائك!"
-        }
-      ],
-      "next_node": "sister_reveal"
-    },
-    {
-      "node_id": "sister_reveal",
-      "background": "messy_dorm_room",
-      "bgm": "bgm_slice_of_life_tension",
-      "ui_state": "dialogue_box",
-      "characters": [
-        {
-          "char_id": "sister_lina",
-          "name": "لينا (الأخت)",
-          "sprite_body": "base_sister_beautiful",
-          "sprite_face": "exp_angry_worried",
-          "sprite_outfit": "outfit_sister_daily",
-          "position": "center"
-        }
-      ],
-      "dialogues": [
-        {
-          "speaker": "sister_lina",
-          "text": "لقد تأخرت عن الصف الدراسي مجدداً! (تتوقف وتنظر لعينيه بقلق) أخي... هل ما زال هؤلاء الحثالة يتنمرون عليك؟ هل هذا سبب حبسك لنفسك؟"
-        }
-      ],
-      "choices": [
-        {
-          "text": "التصرف بضعف: (أنا بخير، لا تقلقي)",
-          "setVar": { "identity_mask": 10 },
-          "targetNode": "sister_final_01"
-        },
-        {
-          "text": "ابتسامة واثقة: (لا تقلقي.. فأخوكِ قوي)",
-          "setVar": { "sister_affection": 5 },
-          "targetNode": "sister_final_01"
-        }
-      ]
-    },
-    {
-      "node_id": "sister_final_01",
-      "background": "messy_dorm_room",
-      "ui_state": "dialogue_box",
-      "characters": [
-        {
-          "char_id": "sister_lina",
-          "name": "لينا (الأخت)",
-          "sprite_body": "base_sister_beautiful",
-          "sprite_face": "exp_surprised_blush",
-          "sprite_outfit": "outfit_sister_daily",
-          "position": "center"
-        }
-      ],
-      "dialogues": [
-        {
-          "speaker": "sister_lina",
-          "text": "قوي؟ منذ متى وأنت تتحدث بهذه الثقة؟ (تمسح دمعة خفيفة) هيا، جهز نفسك.. لا أريد للأميرة المتغطرسة أن تجد عذراً لترسبك هذا العام."
-        }
-      ],
-      "events_post": [
-        { 
-          "type": "update_mission", 
-          "content": "المهمة الجديدة: البقاء متخفياً في الأكاديمية وحماية لينا." 
-        }
-      ],
-      "next_node": "end_of_chapter"
-    }
-  ]
+  "chapter": {
+    "id": "arc_02_academy_entrance",
+    "title": "اليوم الأول: الانعكاس والكيان المخفي",
+    "nodes": [
+      {
+        "node_id": "academy_hallway_01",
+        "background": "bg_academy_hallway_fancy",
+        "bgm": "bgm_academy_routine",
+        "ui_state": "dialogue_box",
+        "characters": [
+          {
+            "char_id": "sister_lina",
+            "name": "لينا",
+            "sprite_body": "base_sister_academy",
+            "sprite_face": "exp_worried",
+            "position": "left"
+          },
+          {
+            "char_id": "mc_hero",
+            "name": "[Player_Name]",
+            "sprite_body": "base_student_weak",
+            "sprite_face": "exp_sleepy",
+            "position": "center"
+          }
+        ],
+        "dialogues": [
+          {
+            "speaker": "sister_lina",
+            "text": "حسناً، فصلي في الاتجاه الآخر. أرجوك يا أخي، ابقَ بعيداً عن المشاكل ولا تلفت انتباه النبلاء، خاصة مجموعة الأميرة."
+          },
+          {
+            "speaker": "[Player_Name]",
+            "text": "(يصطنع الابتسامة) لا تقلقي، سأكون غير مرئي كعادتي."
+          }
+        ],
+        "events": [
+          {
+            "type": "character_exit",
+            "target": "sister_lina"
+          }
+        ],
+        "next_node": "academy_hallway_02"
+      },
+      {
+        "node_id": "academy_hallway_02",
+        "background": "bg_academy_hallway_fancy",
+        "bgm": "bgm_tension_build",
+        "characters": [
+          {
+            "char_id": "noble_casper",
+            "name": "النبيل كاسبر",
+            "sprite_body": "base_noble_arrogant",
+            "sprite_face": "exp_arrogant_smirk",
+            "position": "right"
+          }
+        ],
+        "events": [
+          {
+            "type": "show_system_window",
+            "title": "تحليل العدو",
+            "content": "[الهدف: كاسبر - رتبة سحرية: E]\n[مؤشر الكبرياء (Ego): 100%]\n[النية: إلقاء تعويذة (عرقلة هوائية) خفية لإسقاطك أمام الأميرة.]",
+            "color": "blue"
+          }
+        ],
+        "dialogues": [
+          {
+            "speaker": "[Player_Name]",
+            "text": "(في نفسه) هذا الأحمق المهرج يريد استخدامي كسجادة ليلفت انتباه تلك الأميرة المغرورة التي تمشي خلفه؟"
+          }
+        ],
+        "choices": [
+          {
+            "text": "استخدام قدرة (الانعكاس) على التعويذة سراً",
+            "actions": [
+              { "type": "play_sfx", "sfx": "sfx_magic_reflect_muffled" },
+              { "type": "modify_variable", "target": "casper_ego", "value": -100 }
+            ],
+            "next_node": "the_faceslap_01"
+          }
+        ]
+      },
+      {
+        "node_id": "the_faceslap_01",
+        "background": "bg_academy_hallway_fancy",
+        "bgm": "bgm_comic_relief",
+        "sfx": "sfx_crash_water_fountain",
+        "events": [
+          {
+            "type": "screen_effect",
+            "effect": "screen_shake_light"
+          }
+        ],
+        "characters": [
+          {
+            "char_id": "noble_casper",
+            "sprite_face": "exp_humiliated_crying",
+            "position": "right"
+          },
+          {
+            "char_id": "princess_royal",
+            "name": "الأميرة",
+            "sprite_body": "base_princess_uniform",
+            "sprite_face": "exp_disgusted",
+            "position": "left"
+          }
+        ],
+        "dialogues": [
+          {
+            "speaker": "الطلاب",
+            "text": "(يضحكون بصوت عالٍ) هل رأيت ذلك؟! لقد تعثر في تعويذته الخاصة وطار في النافورة!"
+          },
+          {
+            "speaker": "princess_royal",
+            "text": "(تنظر له باحتقار شديد) يا لك من مهرج مثير للشفقة. لا تلوث طريقي مجدداً."
+          },
+          {
+            "speaker": "[Player_Name]",
+            "text": "(يرمش ببراءة مصطنعة) واو.. السحر في هذه الأكاديمية يبدو خطيراً جداً. هل أنت بخير يا زميلي؟"
+          }
+        ],
+        "events_post": [
+          { "type": "character_exit", "target": "noble_casper" },
+          { "type": "character_exit", "target": "princess_royal" }
+        ],
+        "next_node": "mysterious_girl_intro"
+      },
+      {
+        "node_id": "mysterious_girl_intro",
+        "background": "bg_academy_hallway_fancy",
+        "bgm": "bgm_mysterious_encounter",
+        "characters": [
+          {
+            "char_id": "girl_vanilla",
+            "name": "طالبة غريبة",
+            "sprite_body": "base_vanilla_uniform",
+            "sprite_face": "exp_mysterious_smile",
+            "position": "center"
+          }
+        ],
+        "dialogues": [
+          {
+            "speaker": "girl_vanilla",
+            "text": "(تقترب وتمد له منديلاً بلطف) خذ، لتنظف قطرات الماء التي طالتك من النافورة."
+          },
+          {
+            "speaker": "[Player_Name]",
+            "text": "أوه، شكراً لكِ... أنتِ لطيفة جـ-"
+          },
+          {
+            "speaker": "girl_vanilla",
+            "text": "(تميل نحو أذنه وتهمس بصوت لا يسمعه غيره) أنت محظوظ جداً يا زميلي... أو ربما، تمتلك (ردود أفعال) مثيرة للاهتمام للغاية؟"
+          }
+        ],
+        "events": [
+          {
+            "type": "character_exit",
+            "target": "girl_vanilla"
+          }
+        ],
+        "next_node": "system_target_alert"
+      },
+      {
+        "node_id": "system_target_alert",
+        "background": "bg_academy_hallway_fancy",
+        "bgm": "bgm_system_cyber",
+        "sfx": "sfx_system_alert_danger",
+        "ui_state": "system_hologram_red",
+        "characters": [
+          {
+            "char_id": "mc_hero",
+            "name": "[Player_Name]",
+            "sprite_body": "base_student_weak",
+            "sprite_face": "exp_cold_serious",
+            "position": "center"
+          }
+        ],
+        "dialogues": [
+          {
+            "speaker": "System",
+            "text": "[تنبيه خطير: تم رصد كيان متخفي (تصنيف S) يحمل (عيون الحقيقة السحرية).]"
+          },
+          {
+            "speaker": "System",
+            "text": "[الكيان رصد تلاعبك بمسار التعويذة. هويتك كطالب ضعيف في خطر!]"
+          },
+          {
+            "speaker": "System",
+            "text": "[المهمة الرئيسية الجديدة: إخضاع الكيان المتخفي (الطالبة) أو ضمها لصفك كأول بيدق في رقعتك، قبل أن تكشف سرك للأكاديمية.]"
+          },
+          {
+            "speaker": "[Player_Name]",
+            "text": "(يبتسم ابتسامة خبيثة في الخفاء) كيان تصنيف S يتخفى كطالبة عادية؟ يبدو أن هذه الأكاديمية لن تكون مملة كما ظننت."
+          }
+        ],
+        "events_post": [
+          { "type": "add_variable", "target": "target_vanilla_unlocked", "value": 1 }
+        ],
+        "next_node": "end_of_chapter"
+      }
+    ]
+  }
 }

@@ -1,6 +1,6 @@
 {
   "chapterId": "arc_01_prologue",
-  "chapterName": "الموت السخيف والاستيقاظ المطلق",
+  "chapterName": "الموت السخيف والبعث (الفصل الأول)",
   "nodes": [
     {
       "node_id": "start_01",
@@ -20,7 +20,7 @@
       "dialogues": [
         {
           "speaker": "mc_hero",
-          "text": "أخيراً... الإصدار المحدود من (برجر الفوضى المزدوج) متاح لمدة ساعة واحدة فقط."
+          "text": "أخيراً... الإصدار المحدود من (برجر الفوضى المزدوج) متاح لمدة ساعة واحدة فقط.. أنا [Real_Name]، لن أفوت هذا اليوم!"
         },
         {
           "speaker": "mc_hero",
@@ -80,17 +80,23 @@
       "choices": [
         {
           "text": "نسيت أن أعمل Save للعبتي!",
-          "setVar": { "trait_gamer": 1 },
+          "setVar": {
+            "trait_gamer": 1
+          },
           "targetNode": "system_awaken_01"
         },
         {
           "text": "البرجر المزدوج... راح عليّ.",
-          "setVar": { "trait_gluttony": 1 },
+          "setVar": {
+            "trait_gluttony": 1
+          },
           "targetNode": "system_awaken_01"
         },
         {
           "text": "أخيراً... سأتمكن من النوم للأبد دون إزعاج.",
-          "setVar": { "trait_sloth": 1 },
+          "setVar": {
+            "trait_sloth": 1
+          },
           "targetNode": "system_awaken_01"
         }
       ]
@@ -125,7 +131,7 @@
       "dialogues": [
         {
           "speaker": "System",
-          "text": "مرحباً بعودتك إلى الوجود... يا سيد الدمار.\n[الرجاء إدخال اسمك المستعار للغطاء البشري الجديد]"
+          "text": "مرحباً بعودتك إلى الوجود... يا [Real_Name].\n[الرجاء إدخال اسمك المستعار للغطاء البشري الجديد]"
         }
       ],
       "events": [
@@ -173,7 +179,217 @@
           "text": "[تنبيه: تم رصد أول حليف من قادة الصفر. مستوى الولاء: أقصى حد.]"
         }
       ],
-      "nextNode": "end_of_chapter"
+      "nextNode": "awakening_01"
+    },
+    {
+      "node_id": "awakening_01",
+      "background": "messy_dorm_room",
+      "bgm": "bgm_mysterious_dark",
+      "ui_state": "dialogue_box",
+      "characters": [
+        {
+          "char_id": "mc_hero",
+          "name": "[Player_Name]",
+          "sprite_body": "base_student_weak",
+          "sprite_face": "exp_confused",
+          "sprite_outfit": "outfit_messy_uniform",
+          "position": "center"
+        }
+      ],
+      "dialogues": [
+        {
+          "speaker": "[Player_Name]",
+          "text": "(ينظر ليديه المرتجفتين) ما هذا المكان؟ تلك الدائرة السحرية على الأرض... هل هذه دماء؟"
+        }
+      ],
+      "events": [
+        {
+          "type": "show_system_window",
+          "title": "تنبيه النظام",
+          "content": "[تم الاستحواذ بنجاح. تم دمج ذكريات المضيف الميت.]\n[المهارة المكتسبة: اللاشيء (المستوى 1)]",
+          "color": "red"
+        }
+      ],
+      "next_node": "power_test_01"
+    },
+    {
+      "node_id": "power_test_01",
+      "background": "messy_dorm_room",
+      "bgm": "bgm_power_rising",
+      "ui_state": "dialogue_box",
+      "characters": [
+        {
+          "char_id": "mc_hero",
+          "name": "[Player_Name]",
+          "sprite_body": "base_student_weak",
+          "sprite_face": "exp_smirk",
+          "sprite_outfit": "outfit_messy_uniform",
+          "position": "center"
+        }
+      ],
+      "dialogues": [
+        {
+          "speaker": "[Player_Name]",
+          "text": "اللاشيء؟ هل ضحى هذا الفتى بحياته ليستدعي 'سيد الدمار' من أجل مهارة تبدو بهذا الضعف؟ فلنجربها على هذا السقف اللعين."
+        }
+      ],
+      "choices": [
+        {
+          "text": "تفعيل مهارة (اللاشيء)",
+          "actions": [
+            {
+              "type": "play_sfx",
+              "sfx": "sfx_void_erase"
+            },
+            {
+              "type": "screen_effect",
+              "effect": "white_hole_expansion"
+            }
+          ],
+          "targetNode": "power_test_02"
+        }
+      ]
+    },
+    {
+      "node_id": "power_test_02",
+      "background": "dorm_no_ceiling",
+      "bgm": "bgm_none",
+      "ui_state": "dialogue_box",
+      "characters": [
+        {
+          "char_id": "mc_hero",
+          "name": "[Player_Name]",
+          "sprite_body": "base_student_weak",
+          "sprite_face": "exp_shocked",
+          "sprite_outfit": "outfit_messy_uniform",
+          "position": "center"
+        }
+      ],
+      "dialogues": [
+        {
+          "speaker": "[Player_Name]",
+          "text": "ماذا؟! السقف... لقد مُحي تماماً من الوجود! لا غبار، لا حطام... فقط فراغ. هذه القوة مرعبة."
+        },
+        {
+          "speaker": "[Player_Name]",
+          "text": "بسرعة، قبل أن يلاحظ أحد... (الانعكاس)!"
+        }
+      ],
+      "events": [
+        {
+          "type": "change_bg",
+          "target": "messy_dorm_room",
+          "effect": "reverse_time_glitch"
+        }
+      ],
+      "next_node": "sister_entrance_01"
+    },
+    {
+      "node_id": "sister_entrance_01",
+      "background": "messy_dorm_room",
+      "bgm": "none",
+      "ui_state": "dialogue_box",
+      "characters": [],
+      "dialogues": [
+        {
+          "speaker": "صوت من خلف الباب",
+          "text": "تباً لك أيها اللعين! افتح الباب الآن وإلا سأحطمه على رأسك!"
+        },
+        {
+          "speaker": "[Player_Name]",
+          "text": "(عيون باردة) هل يجرؤ فاني على تهديدي؟ سأمحوه قبل أن يخطو خطوة واحدة..."
+        }
+      ],
+      "events": [
+        {
+          "type": "screen_effect",
+          "effect": "red_vignette_flash"
+        },
+        {
+          "type": "play_sfx",
+          "sfx": "sfx_heart_stab"
+        }
+      ],
+      "next_node": "soul_contract_node"
+    },
+    {
+      "node_id": "soul_contract_node",
+      "background": "messy_dorm_room",
+      "bgm": "bgm_heartbeat_fast",
+      "ui_state": "system_warning",
+      "dialogues": [
+        {
+          "speaker": "الروح القديمة",
+          "text": "توقف! هذه أختي! إن لمست خصلة من شعرها، سأحطم هذا الجسد ونذهب سوياً للجحيم! احمِها... هذا هو ثمن استدعائك!"
+        }
+      ],
+      "next_node": "sister_reveal"
+    },
+    {
+      "node_id": "sister_reveal",
+      "background": "messy_dorm_room",
+      "bgm": "bgm_slice_of_life_tension",
+      "ui_state": "dialogue_box",
+      "characters": [
+        {
+          "char_id": "sister_lina",
+          "name": "لينا (الأخت)",
+          "sprite_body": "base_sister_beautiful",
+          "sprite_face": "exp_angry_worried",
+          "sprite_outfit": "outfit_sister_daily",
+          "position": "center"
+        }
+      ],
+      "dialogues": [
+        {
+          "speaker": "sister_lina",
+          "text": "لقد تأخرت عن الصف الدراسي مجدداً! (تتوقف وتنظر لعينيه بقلق) أخي... هل ما زال هؤلاء الحثالة يتنمرون عليك؟ هل هذا سبب حبسك لنفسك؟"
+        }
+      ],
+      "choices": [
+        {
+          "text": "التصرف بضعف: (أنا بخير، لا تقلقي)",
+          "setVar": {
+            "identity_mask": 10
+          },
+          "targetNode": "sister_final_01"
+        },
+        {
+          "text": "ابتسامة واثقة: (لا تقلقي.. فأخوكِ قوي)",
+          "setVar": {
+            "sister_affection": 5
+          },
+          "targetNode": "sister_final_01"
+        }
+      ]
+    },
+    {
+      "node_id": "sister_final_01",
+      "background": "messy_dorm_room",
+      "ui_state": "dialogue_box",
+      "characters": [
+        {
+          "char_id": "sister_lina",
+          "name": "لينا (الأخت)",
+          "sprite_body": "base_sister_beautiful",
+          "sprite_face": "exp_surprised_blush",
+          "sprite_outfit": "outfit_sister_daily",
+          "position": "center"
+        }
+      ],
+      "dialogues": [
+        {
+          "speaker": "sister_lina",
+          "text": "قوي؟ منذ متى وأنت تتحدث بهذه الثقة؟ (تمسح دمعة خفيفة) هيا، جهز نفسك.. لا أريد للأميرة المتغطرسة أن تجد عذراً لترسبك هذا العام."
+        }
+      ],
+      "events_post": [
+        {
+          "type": "update_mission",
+          "content": "المهمة الجديدة: البقاء متخفياً في الأكاديمية وحماية لينا."
+        }
+      ],
+      "next_node": "end_of_chapter"
     }
   ]
 }
